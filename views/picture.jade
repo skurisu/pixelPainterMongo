@@ -1,0 +1,12 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title= picture.title
+  link(rel="stylesheet", href="/styles/styles.css")
+body
+  h1= picture.title
+  div#artboard 
+    each cell in picture.capturedGrid
+      div.cell(style="background-color: #{cell}")
+  

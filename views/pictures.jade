@@ -1,0 +1,18 @@
+doctype
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  script(type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js")
+  link(rel="stylesheet", href="styles/styles.css")
+  title Document
+body
+  h1 Pictures
+  ul
+    each picture in pictures
+      li
+        a( href="/picture/#{picture._id}")= picture.title
+        
+        
+            
+
+  
